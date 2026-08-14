@@ -28,8 +28,8 @@ Simulations are executed across two population structures:
 
 The project is structured to offer both a simple, self-contained single-file script and a modular, clean package:
 
-* **[main.py](file:///Users/cintiamillan/Desktop/MAS-IL-RL/main.py)**: A research-clean, single-file implementation scaffold containing all models, payoff configurations, topologies, and simulation drivers in one place.
-* **[ml_package/](file:///Users/cintiamillan/Desktop/MAS-IL-RL/ml_package)**: A modularized version of the simulation framework package (`mlcoop`):
+* **[main.py](main.py)**: A research-clean, single-file implementation scaffold containing all models, payoff configurations, topologies, and simulation drivers in one place.
+* **[ml_package/](ml_package)**: A modularized version of the simulation framework package (`mlcoop`):
   * `mlcoop/core/config.py`: Dataclasses for RL, IL, and ML parameters.
   * `mlcoop/core/games.py`: Game payoff matrices (PDG, CG, CoG).
   * `mlcoop/core/topology.py`: Graph creation (square lattices) and neighborhood mappings.
@@ -37,7 +37,7 @@ The project is structured to offer both a simple, self-contained single-file scr
   * `mlcoop/core/il.py` / `rl.py` / `ml.py`: Step update rules for imitation, reinforcement, and conflict resolution.
   * `mlcoop/core/simulators.py`: High-level simulation runners.
   * `mlcoop/experiments/baselines.py`: Scripts to run baseline sweeps.
-* **[mainV1/](file:///Users/cintiamillan/Desktop/MAS-IL-RL/mainV1)**: Legacy/v1 version of the single-file simulator.
+* **[mainV1/](mainV1)**: Legacy/v1 version of the single-file simulator.
 
 ---
 
@@ -45,8 +45,8 @@ The project is structured to offer both a simple, self-contained single-file scr
 
 1. **Clone the repository**:
    ```bash
-   git clone git@github.com:CiMillan/MAS-IL-RL.git
-   cd MAS-IL-RL
+   git clone git@github.com:CiMillan/multi-agent-system-RL.git
+   cd multi-agent-system-RL
    ```
 
 2. **Install dependencies**:
