@@ -461,7 +461,7 @@ def rl_pending_strategy(
     # --------------------
     # Exact H update and attraction algebra are reconstructed here in a clean,
     # standard EWA-like form.
-    new_H = (1.0 - params.rho) * rl_state.H + 1.0
+    new_H = params.rho * rl_state.H + 1.0
 
     numer_c = (
         params.phi * rl_state.H * rl_state.F_C
